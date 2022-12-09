@@ -1,0 +1,296 @@
+@media screen and (max-width : 1400px) {
+    .container {
+        width: 90%;
+    }
+
+    #our-story .story-desk h1 {
+        margin-top: 100px;
+    }
+
+    #our-story .story-desk p {
+        width: 90%;
+    }
+
+    #menu .menu-desk p {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width : 1200px) {
+    #our-story {
+        height: 400px;
+    }
+
+    #our-story .story-desk h1 {
+        margin-top: 70px;
+    }
+
+    #delight .delight .delight-desc h1 {
+        margin-top: 70px;
+    }
+
+    #delight .delight .delight-image img {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width : 992px) {
+    header nav ul {
+        display: none;
+    }
+
+    header .hamburger-icon {
+        display: block;
+        float: right;
+    }
+
+    header .hamburger-icon img {
+        margin-top: 10px;
+        cursor: pointer;
+    }
+
+    header nav .logo {
+        float: left;
+    }
+
+    #responsive-navigation {
+        display: block;
+        width: 200px;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right: -200px;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    #responsive-navigation ul {
+        display: block;
+        width: 100%;
+
+    }
+
+    #responsive-navigation ul li {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+
+    .back-container {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    #our-story {
+        height: 550px;
+        padding: 0;
+    }
+
+    #our-story .story-desk {
+        width: 100%;
+    }
+
+    #our-story .story-image {
+        width: 100%;
+        text-align: center;
+    }
+
+    #our-story .story-image img {
+        width: 400px;
+    }
+
+    #menu .menu-desk {
+        width: 100%;
+    }
+
+    #menu .menu-img {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    #menu .menu-img ul li {
+        width: 25%;
+    }
+
+    #menu .menu-desk h1 {
+        margin-top: 0;
+    }
+
+    #delight {
+        padding: 50px 0;
+    }
+
+    #delight .delight .delight-desc {
+        width: 100%;
+    }
+
+    #delight .delight .delight-image {
+        width: 100%;
+        text-align: center;
+
+    }
+
+    #delight .delight .delight-image img {
+        width: 230px;
+        float: none;
+
+    }
+}
+
+@media screen and (max-width : 768px) {
+    header .header-desck {
+        top: 150px;
+    }
+
+    header .header-desck h1 {
+        font-size: 40px;
+        margin-top: 250px;
+    }
+
+    header .header-desck p {
+        font-size: 21px;
+    }
+
+    #our-story .story-desk h1 {
+        margin-top: 70px;
+    }
+
+    #our-story .story-desk h1 {
+        margin-top: 50px;
+    }
+
+    #sweet .sweet-desk {
+        padding: 50px 0;
+    }
+
+    #sweet .sweet-desk h1 {
+        font-size: 35px;
+    }
+
+    #sweet .sweet-desk p {
+        font-size: 17px;
+        width: 100%;
+
+    }
+
+    #menu .menu-img ul li {
+        width: 50%;
+    }
+
+    #menu {
+        height: auto;
+    }
+
+    #menu .container {
+        overflow: auto;
+    }
+
+    #footer .footer .about-footer p {
+        width: 90%;
+    }
+
+    element.style {}
+
+    user agent stylesheet h2 {
+        display: block;
+        font-size: 1.5em;
+        margin-block-start: 0.83em;
+        margin-block-end: 0.83em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+    }
+
+    #footer .contact-us .news-letter {
+        width: 50%;
+        color: white;
+        float: right;
+    }
+
+    #footer .contact-us {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width : 576px) {
+    header .header-desck h1 {
+        font-size: 30px;
+    }
+
+    header .header-desck p {
+        font-size: 17 px;
+    }
+
+    #our-story .story-desk h1 {
+        font-size: 25px;
+    }
+
+    #our-story .story-desk p {
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    #our-story .story-image img {
+        width: 100%;
+    }
+
+    .hot {
+        padding: 0;
+    }
+
+    .hot .hot-title {
+        margin-top: 50px;
+    }
+
+    .hot .hot-title h1 {
+        font-size: 50px;
+    }
+
+    .hot .hot-title p {
+        font-size: 25px;
+    }
+
+    #delight .delight .delight-desc h1 {
+        font-size: 35px;
+    }
+
+    #delight .delight .delight-desc p {
+        font-size: 18px;
+    }
+}
+
+
+@media screen and (max-width : 400px) {
+    header .header-desck h1 {
+        font-size: 25px;
+    }
+
+    header .header-desck p {
+        font-size: 15 px;
+    }
+
+    #sweet .sweet-desk h1 {
+        font-size: 25px;
+    }
+
+    #sweet .sweet-desk p {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    #menu .menu-img ul li {
+        width: 100%;
+    }
+
+    .hot .hot-title h1 {
+        font-size: 40px;
+    }
+
+    .hot .hot-title p {
+        font-size: 20px;
+    }
+}

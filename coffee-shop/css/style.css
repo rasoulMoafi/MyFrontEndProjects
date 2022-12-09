@@ -1,0 +1,430 @@
+@font-face {
+    font-family: vazir;
+    src: url('../fonts/Vazir.eot')format('eot'),
+        url('../fonts/Vazir.ttf') format('truetype'),
+        url('../fonts/Vazir.woff2') format('woff2'),
+        url('../fonts/Vazir.woff') format('woff'),
+
+}
+
+
+/* srtart body */
+body {
+    font-family: vazir;
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* end body */
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+/* start header */
+
+.container {
+    /* baws mishe header biyad vasat */
+    width: 1100px;
+    height: 100%;
+    margin: auto;
+}
+
+.overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, .4);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+}
+
+.hamburger-icon {
+    width: 50%;
+    display: none;
+}
+
+.hamburger-icon img {
+    width: 100px;
+}
+
+#responsive-navigation {
+    display: none;
+}
+
+input {
+    font-family: "vazir"
+}
+
+header {
+    background-image: url('../images/bakcground-header.jpg');
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+
+}
+
+
+header nav {
+    background-color: rgba(0, 0, 0, .6);
+    width: 100%;
+    height: 80px;
+}
+
+header nav ul {
+    width: 50%;
+    float: right;
+    height: 100%;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 10px 0 10px;
+    line-height: 4;
+
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+
+}
+
+header nav .logo {
+    width: 50%;
+    float: right;
+    text-align: left;
+    height: 100%;
+}
+
+header nav .logo img {
+    width: 80px;
+    margin-top: 5px;
+}
+
+header .header-desck {
+    color: white;
+    position: absolute;
+    top: 40%;
+    right: 0;
+    left: 0;
+    text-align: center;
+
+}
+
+header .header-desck h1 {
+    font-size: 50px;
+}
+
+header .header-desck p {
+    font-size: 25px;
+}
+
+/* end header */
+
+/* start our-story section */
+
+#our-story {
+    width: 100%;
+    height: 450px;
+    padding: 100px 0;
+}
+
+#our-story .story-desk {
+    width: 50%;
+    float: right;
+    text-align: center;
+}
+
+#our-story .story-desk h1 {
+    font-size: 30px;
+    margin-top: 100px;
+}
+
+#our-story .story-desk p {
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 30px;
+    width: 550px;
+    margin: auto;
+}
+
+#our-story .story-image {
+
+    width: 50%;
+    float: right;
+}
+
+#our-story .story-image img {
+    width: 100%;
+}
+
+/* end our-story section */
+
+
+/* start sweet section */
+
+#sweet {
+    width: 100%;
+    height: 300px;
+    padding: 100px 0;
+    background-image: url('../images/backtwo.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+
+}
+
+#sweet .sweet-desk {
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+}
+
+#sweet .sweet-desk h1 {
+    font-size: 45px;
+}
+
+#sweet .sweet-desk p {
+    font-size: 20px;
+    width: 600px;
+    margin: auto;
+
+}
+
+/* end swwet section */
+
+
+/* start menu section */
+
+#menu {
+    width: 100%;
+    height: 430px;
+    padding: 100px 0;
+}
+
+#menu .menu-desk {
+    width: 50%;
+    float: right;
+    text-align: center;
+}
+
+#menu .menu-desk h1 {
+    font-size: 40px;
+    margin-top: 100px;
+
+}
+
+#menu .menu-desk p {
+    line-height: 30px;
+    font-size: 21px;
+    width: 550px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+#menu .menu-desk a {
+    text-decoration: none;
+    color: black;
+    font-size: 19px;
+    border-bottom: 2px solid rgb(243, 12, 12);
+}
+
+#menu .menu-img {
+    width: 50%;
+    float: right;
+}
+
+#menu .menu-img ul {
+    width: 100%;
+
+}
+
+#menu .menu-img ul li {
+    width: 50%;
+    float: right;
+    text-align: left;
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+#menu .menu-img img {
+    width: 95%;
+    height: 200px;
+
+}
+
+/* end menu section */
+
+/* start hot section */
+
+.hot {
+    background-image: url('../images/hot.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 400px;
+    padding: 100px 0;
+    position: relative;
+}
+
+.hot .hot-title {
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.hot .hot-title h1 {
+    font-size: 70px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.hot .hot-title p {
+    font-size: 30px;
+}
+
+/* end hot section */
+
+/* start delight section */
+
+#delight {
+    padding: 100px 0;
+    width: 100%;
+    /* height: 350px; */
+    overflow: auto;
+    /* mohtavaye delighto az baadi joda mikone */
+}
+
+#delight .delight {
+    width: 100%;
+}
+
+#delight .delight .delight-desc {
+    width: 50%;
+    float: right;
+    text-align: center;
+}
+
+#delight .delight .delight-desc h1 {
+    font-size: 40px;
+    margin-top: 100px;
+}
+
+#delight .delight .delight-desc p {
+    font-size: 22px;
+    margin-top: 40px;
+}
+
+#delight .delight .delight-image {
+    width: 50%;
+    float: right;
+    text-align: center;
+
+}
+
+#delight .delight .delight-image li {
+    list-style: none;
+}
+
+
+#delight .delight .delight-image img {
+    width: 250px;
+    height: 350px;
+    float: left;
+    margin: 0 10px;
+
+}
+
+/* end delight section */
+
+/* start footer section */
+
+#footer {
+    background-color: rgb(20, 20, 20);
+    padding-top: 100px;
+}
+
+#footer .footer {
+    width: 100%;
+}
+
+#footer .footer .about-footer {
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+#footer .footer .about-footer h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+#footer .footer .about-footer p {
+    width: 600px;
+    font-size: 20px;
+    margin: auto;
+    line-height: 30px;
+}
+
+#footer .contact-us {
+    width: 60%;
+    height: 100px;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#footer .contact-us .news-letter {
+    width: 50%;
+    color: white;
+    float: right;
+}
+
+#footer .contact-us .social h2 {
+    color: white;
+}
+
+#footer .contact-us .news-letter input {
+    /* margin-top: 5px; */
+    padding: 8px;
+}
+
+#footer .contact-us .social {
+    width: 50%;
+    float: right;
+}
+
+#footer .contact-us .social ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+#footer .contact-us .social ul li a {
+    color: white;
+}
+
+#footer .contact-us .social ul li a svg {
+    font-size: 30px;
+}
+
+#footer .copy-right {
+    background-color: #333;
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 150px;
+    padding-top: 20px;
+    margin-top: 50px;
+}
+
+
+
+/* end footer section */
