@@ -1,16 +1,16 @@
 @font-face {
-    font-family: vazir;
+    font-family: 'Vazir';
     src: url('../fonts/Vazir.eot')format('eot'),
         url('../fonts/Vazir.ttf') format('truetype'),
         url('../fonts/Vazir.woff2') format('woff2'),
-        url('../fonts/Vazir.woff') format('woff'),
+        url('../fonts/Vazir.woff') format('woff');
 
 }
 
 
 /* srtart body */
 body {
-    font-family: vazir;
+    font-family: 'Vazir';
     direction: rtl;
     margin: 0;
     padding: 0;

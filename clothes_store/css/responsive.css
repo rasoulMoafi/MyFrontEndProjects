@@ -1,0 +1,325 @@
+@media screen and (max-width : 992px) {
+    h2 {
+        font-size: 25px;
+    }
+
+    header .navbar .menu>ul {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 300px;
+        height: 90vh;
+        background: #c00;
+        z-index: 12;
+        display: none;
+        overflow-y: auto;
+    }
+
+    header .navbar .menu>ul.hide-navbar {
+        display: none;
+    }
+
+    header .navbar .menu>ul.show-navbar {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+        width: 40px;
+        height: 40px;
+        background: #fff;
+        display: flex;
+        align-items: center;
+    }
+
+    .hamburger div {
+        width: 90%;
+        height: 3px;
+        background: rgb(21, 20, 20);
+        position: relative;
+        cursor: pointer;
+    }
+
+    .hamburger div::after {
+        content: ' ';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgb(21, 20, 20);
+        transform: translateY(-10px);
+    }
+
+    .hamburger div::before {
+        content: ' ';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgb(21, 20, 20);
+        transform: translateY(10px);
+
+    }
+
+    header .navbar .menu>ul>li {
+        margin: 30px 0;
+    }
+
+    header .navbar .menu>ul>li a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    header .navbar .menu>ul>li a>svg {
+        width: auto;
+        font: 25px;
+        margin-top: 0;
+        position: absolute;
+        left: 80px;
+    }
+
+    header .navbar .menu ul li ul.mega-menu {
+        display: none;
+        transform: translateY(0px);
+        position: relative;
+        top: 10px;
+    }
+
+
+    header .navbar .menu>ul>li:hover ul.mega-menu {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(0px);
+    }
+
+    header .navbar .menu ul li ul.mega-menu.fade {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    header .navbar .menu ul li ul.mega-menu li {
+        width: 100%;
+    }
+
+    header .navbar .menu>ul>.close-icon {
+        display: block;
+        text-align: center;
+        padding: 20px;
+        border-bottom: 1px solid rgb(42, 39, 39);
+        cursor: pointer;
+    }
+
+    header .navbar .menu>ul>.close-icon:hover {
+        background-color: rgb(25, 25, 25);
+    }
+
+    header .navbar .menu>ul>.close-icon svg {
+        font-size: 25px;
+        color: white;
+        cursor: pointer;
+    }
+
+
+    header .navbar .menu>ul>li>a:hover {
+        color: black;
+    }
+
+    header .navbar .social {
+        width: 100%;
+    }
+
+    header .navbar .social ul {
+        width: 50%;
+    }
+
+    header .navbar .social .linka {
+        width: 50%;
+    }
+
+    #main {
+        flex-wrap: wrap;
+    }
+
+    #main #content {
+        width: 100%;
+    }
+
+    #main #sidebar {
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+
+
+@media screen and (max-width : 768px) {
+    header .navbar .social .linka {
+        display: none;
+    }
+
+    .slider-item .item .caption h1 {
+        font-size: 30px;
+    }
+
+    .slider-item .item .caption p {
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .suggested .suggested-title {
+        width: 100%;
+    }
+
+    .suggested .suggested-product {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .footer .footer-about {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .footer .footer-social {
+        width: 49%;
+    }
+
+    .footer .footer-news-letter {
+        width: 49%;
+    }
+
+    .justify-content {
+        flex-wrap: wrap;
+    }
+
+    .footer .footer-customer-srvices {
+        width: 49%;
+    }
+
+    .footer .footer-qick-access {
+        width: 49%;
+    }
+
+    .footer .footer-license {
+        width: 100%;
+    }
+
+    .align-items {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    /* .slider-item .item .caption h1 {
+        font-size: 10px;
+    } */
+
+
+}
+
+@media screen and (max-width : 576px) {
+    header .navbar .social ul {
+        width: 100%;
+    }
+
+    header .navbar .social .linka {
+        width: 0;
+    }
+
+    #main #content .content-container .dress {
+        flex-wrap: wrap;
+    }
+
+    #main #content .content-container .dress .dress-item {
+        width: 49%;
+        margin-top: 20px;
+    }
+
+    .best-selling-men .selling-men-product {
+        flex-wrap: wrap;
+
+    }
+
+    .best-selling-men .selling-men-product .selling-item {
+        width: 49%;
+        margin-top: 20px;
+    }
+
+    .best-selling-girl .selling-girl-product {
+        flex-wrap: wrap;
+    }
+
+    .best-selling-girl .selling-girl-product .selling-item {
+        width: 49%;
+        margin-top: 20px;
+    }
+
+    .best-selling-kids .selling-kids-product {
+        flex-wrap: wrap;
+    }
+
+    .best-selling-kids .selling-kids-product .selling-item {
+        width: 49%;
+        margin-top: 20px;
+    }
+
+    .favorite {
+        display: none;
+    }
+}
+
+@media screen and (max-width : 400px) {
+    .slider-item .item .caption h1 {
+        font-size: 15px;
+    }
+
+    .slider-item .item .caption p {
+        font-size: 10px;
+    }
+
+    .best-selling-men .selling-men-product .selling-item {
+        width: 100%;
+    }
+
+    .best-selling-girl .selling-girl-product .selling-item {
+        width: 100%;
+    }
+
+    .best-selling-kids .selling-kids-product .selling-item {
+        width: 100%;
+    }
+
+    .header-title h2 {
+        width: 150px;
+        font-size: 16px;
+    }
+
+    #cosmetic h2 {
+        font-size: 25px;
+        left: 7%;
+    }
+
+    .suggested .suggested-title {
+        font-size: 30px;
+    }
+
+    .suggested .suggested-product {
+        flex-wrap: wrap;
+    }
+
+    .suggested .suggested-product .duggested-product-item {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .footer .footer-social {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .footer .footer-news-letter {
+        width: 100%;
+    }
+}

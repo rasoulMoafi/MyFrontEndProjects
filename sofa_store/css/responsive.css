@@ -1,0 +1,314 @@
+@media screen and (max-width:1400px) {
+    #hanging-lamp .hanging-lamp .hanging-right .img-right img {
+        width: 350px;
+    }
+
+    #hanging-lamp .hanging-lamp .hanging-right .desc-right h4 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    header {
+        height: 700px;
+    }
+
+    header nav .navbar-right ul {
+        display: none;
+    }
+
+    .response {
+        display: flex;
+    }
+
+    header .hamburger-icon {
+        display: block;
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+
+    #responsive-navigation {
+        display: block;
+        width: 100%;
+        height: 70px;
+        position: absolute;
+        top: -70px;
+        right: 0;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    #responsive-navigation ul {
+        display: flex;
+        margin-top: 20px;
+        /* margin-right: 70px; */
+        justify-content: center;
+        /* align-items: center; */
+
+    }
+
+    #responsive-navigation ul li {
+        margin: 0 10px;
+    }
+
+    #responsive-navigation ul li a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+
+    .back-container {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    header #slide {
+        background-position: right;
+    }
+
+    header #slide .slider span {
+        top: 20px;
+        display: none;
+    }
+
+    header #slide .slider .slide-desc {
+        top: 5%;
+        right: 0;
+        text-align: center;
+    }
+
+    header #slide .slider .slide-desc h2 {
+        font-size: 60px;
+        color: black
+    }
+
+    header #slide .slider .slide-desc h1 {
+        font-size: 60px;
+        margin: 0;
+        color: black;
+    }
+
+    #hanging-lamp-two .text-two {
+        width: 641px;
+        height: 500px;
+        left: 35.6%;
+    }
+
+    #hanging-lamp-two .hanging-lamp-two .hang-two-right {
+        width: 64.4%;
+    }
+
+    #hanging-lamp-two .hanging-lamp-two .hang-two-left {
+        width: 35.6%;
+    }
+
+    #hanging-lamp-two .hanging-lamp-two .hang-two-left ul li img {
+        width: 120px;
+        height: 180px;
+    }
+
+    #hanging-lamp-two .hanging-lamp-two .hang-two-right {
+        width: 61.8%;
+        height: 600px;
+    }
+
+    #sofa-two .text-two {
+        right: 35.6%;
+    }
+
+    #sofa-two .sofa-two .sofa-two-left ul li img {
+        width: 160px;
+        height: 200px;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    #hanging-lamp .hanging-lamp .hanging-right .desc-right {
+        display: none;
+    }
+
+    #hanging-lamp .hanging-cover {
+        left: 97%;
+    }
+
+    #hanging-lamp .hanging-lamp .hanging-right .img-right {
+        margin: auto;
+    }
+
+    #hanging-lamp .hanging-lamp .hanging-left h4 {
+        margin-right: 50px;
+    }
+
+    #hanging-lamp .hanging-lamp .hanging-left p {
+        margin-right: 50px;
+    }
+
+    #hanging-lamp-two .text-two {
+        width: 495px;
+        height: 500px;
+        left: 35.6%;
+    }
+
+    #hanging-lamp-two .hanging-lamp-two .hang-two-left ul {
+        margin-right: 20px;
+    }
+
+    #sofa .sofa .sofa-left .desc-left {
+        display: none;
+    }
+
+    #sofa .sofa .sofa-left .img-left {
+        margin: auto;
+    }
+
+    #sofa .sofa .sofa-right h4 {
+        margin-right: 50px;
+    }
+
+    #sofa .sofa .sofa-right p {
+        margin-right: 50px;
+    }
+
+    #sofa-two .sofa-two .sofa-two-left ul {
+        margin-left: 5px;
+    }
+
+    #sofa-two .sofa-two .sofa-two-left ul li img {
+        width: 140px;
+        height: 170px;
+
+    }
+}
+
+@media screen and (max-width:576px) {
+    header #slide .slider .slide-desc h2 {
+        font-size: 40px;
+    }
+
+    header #slide .slider .slide-desc h1 {
+        font-size: 40px;
+    }
+
+    #hanging-lamp .hanging-lamp .hanging-left h4 {
+        font-size: 33px;
+    }
+
+    #hanging-lamp .hanging-lamp .hanging-left p {
+        font-size: 26px;
+    }
+
+    #hanging-lamp-two .text-two {
+        display: none;
+
+    }
+
+    #hanging-lamp-two .hanging-lamp-two .hang-two-right {
+        display: none;
+    }
+
+    #hanging-lamp-two .hanging-lamp-two .hang-two-left {
+        margin: auto;
+        width: 100%;
+    }
+
+    #sofa .sofa .sofa-right h4 {
+        font-size: 30px;
+        margin-right: 40px;
+    }
+
+    #sofa .sofa .sofa-right p {
+        font-size: 25px;
+        margin-right: 40px;
+    }
+
+    #sofa .sofa-cover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        /* right: 93.8%; */
+        right: 100%;
+        background-color: #fff;
+    }
+
+    #sofa-two .text-two {
+        display: none;
+    }
+
+    #sofa-two .sofa-two .sofa-two-right {
+        display: none;
+    }
+
+    #sofa-two .sofa-two .sofa-two-left {
+        margin: auto;
+        width: 100%;
+        height: 400px;
+    }
+
+    #sofa-two .sofa-two .sofa-two-left ul li img {
+        width: 140px;
+        height: 170px;
+    }
+
+    #counters .counters {
+        flex-wrap: wrap;
+    }
+
+    #counters .counters .counters-item {
+        width: 50%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    #counters .counters .counters-item {
+        margin: 20px 0;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    header nav .navbar .navbar-right {
+        display: none;
+    }
+
+    header {
+        height: 450px;
+    }
+
+    header #slide {
+        background-size: contain;
+        height: 550px;
+        background-repeat: no-repeat;
+    }
+
+    #hanging-lamp .hanging-lamp .hanging-left {
+        display: none;
+    }
+
+    #hanging-lamp {
+        background-color: #fff;
+    }
+
+    #sofa {
+        background-color: #fff;
+    }
+
+    #sofa .sofa .sofa-right {
+        display: none;
+    }
+
+    #sofa .sofa .sofa-left .img-left img {
+        width: 350px;
+        height: 300px;
+    }
+
+    #footer .footer .footer-desc {
+        width: 100%;
+    }
+}

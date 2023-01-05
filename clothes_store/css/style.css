@@ -1,0 +1,1188 @@
+@font-face {
+    font-family: 'Vazir';
+    src: url('../fonts/Vazir.eot')format('eot'),
+        url('../fonts/Vazir.ttf') format('truetype'),
+        url('../fonts/Vazir.woff2') format('woff2'),
+        url('../fonts/Vazir.woff') format('woff');
+
+}
+
+@font-face {
+    font-family: 'Yekan';
+    src: url('../fonts/Yekan.eot')format('eot'),
+        url('../fonts/Yekan.ttf') format('truetype'),
+        url('../fonts/Yekan.woff2') format('woff2'),
+        url('../fonts/Yekan.woff') format('woff');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+input,
+button,
+body {
+    font-family: 'Vazir';
+}
+
+.align-items {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.justify-content {
+    align-items: flex-start;
+    justify-content: space-between;
+    display: flex;
+}
+
+.mt-1 {
+    margin-top: 50px;
+}
+
+.border {
+    border-top: 2px solid rgb(32, 31, 31);
+}
+
+.pt-1 {
+    padding-top: 30px;
+}
+
+
+.container {
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container .row {
+    width: 100%;
+}
+
+.header-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-title h2 {
+    width: 250px;
+    text-align: center;
+    position: relative;
+    padding: 5px;
+}
+
+.header-title h2::before {
+    content: '';
+    position: absolute;
+    background-color: rgb(62, 2, 2);
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+}
+
+.header-title a {
+    color: rgb(57, 56, 56);
+    margin-left: 10px;
+}
+
+.sidbar-container {
+    width: 95%;
+    margin-right: 2.5%;
+}
+
+.header-title-sidbar {
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.header-title-sidbar h2 {
+    font-size: 20px;
+    position: relative;
+    padding: 0 10px;
+}
+
+.header-title-sidbar h2::before {
+    content: '';
+    position: absolute;
+    background-color: rgb(62, 2, 2);
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+}
+
+.header-title-sidbar a {
+    color: rgb(149, 147, 147);
+}
+
+body {
+    font-family: 'Vazir';
+    direction: rtl;
+
+}
+
+/* start header */
+
+header {
+    width: 100%;
+    height: 25vh;
+    background-color: black;
+}
+
+header .navbar {
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    justify-content: space-between;
+    /* background-color: black; */
+    align-items: center;
+    /* position: relative; */
+}
+
+header .navbar .menu {
+    width: 50%;
+}
+
+header .navbar .menu>ul {
+    display: flex;
+    width: 90%;
+
+}
+
+header .navbar .menu>ul>li {
+    text-align: center;
+    margin: 0 10px;
+}
+
+header .navbar .menu>ul>li:hover ul.mega-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+header .navbar .menu ul li ul.mega-menu {
+    z-index: 11;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    width: 100%;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateY(50px);
+    transition: all 0.6s ease-in-out;
+
+}
+
+header .navbar .menu ul li ul.mega-menu li {
+    width: 24%;
+}
+
+header .navbar .menu ul li ul.mega-menu li h2 {
+    color: white;
+    font-size: 15px;
+    border-bottom: 1px solid rgb(35, 35, 35);
+    margin-bottom: 10px;
+}
+
+header .navbar .menu ul li ul.mega-menu li ul li {
+    width: 100%;
+}
+
+header .navbar .menu ul li ul.mega-menu li ul li a {
+    display: block;
+    padding: 10px 0;
+    color: white;
+    font-size: 12px;
+    transition: all 0.3s ease-in-out;
+}
+
+header .navbar .menu ul li ul.mega-menu li ul li a:hover {
+    background-color: rgb(32, 32, 31);
+}
+
+header .navbar .menu ul li ul.mega-menu li img {
+    width: 100%;
+    /* margin-top: 30px; */
+}
+
+header .navbar .menu>ul>li>a {
+    font-size: 14px;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+header .navbar .menu>ul>li>a:hover {
+    color: orange;
+}
+
+header .navbar .menu>ul>li>a>svg {
+    width: 100%;
+}
+
+header .navbar .social {
+    display: flex;
+    width: 50%;
+    /* chon width ro be surate dasti midim dg miyad tebqe body(rtl) raftar mikone pass:: */
+    justify-content: flex-end;
+}
+
+header .navbar .social ul {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header .navbar .social ul li {
+    position: relative;
+    width: 100%;
+}
+
+header .navbar .social ul li:hover ul {
+    display: block;
+}
+
+header .navbar .social ul li ul {
+    font-size: 14px;
+    z-index: 11;
+    width: 100%;
+    height: 10vh;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    border-top: 1px solid #ddd;
+    padding: 12px;
+
+    display: none;
+
+}
+
+
+header .navbar .social ul li ul li {
+    text-align: center;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+header .navbar .social ul li ul li a:hover {
+    color: orange;
+
+}
+
+header .navbar .social ul li a {
+    color: white;
+
+}
+
+header .navbar .social ul li a svg {
+    color: white;
+    font-size: 20px;
+    /* background-color: black; */
+}
+
+header .navbar .social ul li a svg:hover {
+    color: orange;
+}
+
+header .navbar .social .linka a {
+    color: white;
+    font-size: 12px;
+    background-color: orange;
+    background: linear-gradient(to left bottom, rgb(227, 150, 27) 30%, rgb(255, 123, 0) 70%);
+    /* margin: auto; */
+    padding: 4px;
+    border-radius: 5px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+header .navbar .social .linka a:hover {
+    background: linear-gradient(to left bottom, rgb(73, 72, 69) 50%, rgb(65, 62, 60) 50%);
+}
+
+/* end header */
+
+.search {
+    position: absolute;
+    right: 0;
+    left: 0;
+    padding: 20px 0;
+    background: rgb(62, 62, 63);
+    /* display: block; */
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.search.show {
+    /* display: none; */
+    opacity: 1;
+    visibility: visible;
+    z-index: 11;
+}
+
+.search form {
+    width: 100%;
+    padding: 0 20px;
+}
+
+.search form input[type=text] {
+    width: 85%;
+    padding: 10px 0;
+    border: none;
+}
+
+.search form input[type=submit] {
+    background: #fff;
+    color: #000;
+    padding: 8px 20px;
+    border: none;
+    font-size: 18px;
+}
+
+/* start ads */
+
+.ads {
+    display: flex;
+    width: 100%;
+    height: 15vh;
+    background-color: rgb(61, 57, 57);
+    justify-content: center;
+    align-items: center;
+}
+
+.ads .banner {
+    height: 100%;
+    width: 50%;
+}
+
+.ads .banner img {
+    width: 100%;
+    height: 100%;
+}
+
+/* end ads */
+
+/* start slider */
+
+.slider {
+    width: 100%;
+    height: 75vh;
+    /* (100vh - header(25vh)) */
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-item {
+    height: 100%;
+}
+
+.slider-item .item {
+    height: 100%;
+    display: none;
+    align-items: center;
+}
+
+.slider-item .item.active {
+    display: flex;
+}
+
+.slider-item .item .img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    animation: zoom 1s linear forwards;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.slider-item .item .caption {
+    position: relative;
+    width: 80vw;
+    margin: auto;
+    z-index: 10;
+}
+
+.slider-item .item .caption h1 {
+    font-size: 40px;
+    animation: text 1s ease forwards;
+    opacity: 0;
+}
+
+.slider-item .item .caption p {
+    font-size: 20px;
+    animation: text 1.5s ease forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
+}
+
+@keyframes text {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+.slider .controls .next,
+.slider .controls .prev {
+    position: absolute;
+    top: 50%;
+    z-index: 11;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(11, 11, 12);
+    color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.slider .controls .next {
+    right: 30px;
+}
+
+.slider .controls .prev {
+    left: 30px;
+}
+
+.slider .controls .next:hover {
+    background-color: #c00;
+}
+
+.slider .controls .prev:hover {
+    background-color: #c00;
+}
+
+@keyframes progress {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+#main {
+    width: 97%;
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#main #content {
+    width: 66%;
+    box-shadow: 0px 5px 15px rgba(22, 22, 22, 0.9)
+}
+
+
+#main #content .content-container {
+    padding: 15px;
+}
+
+#main #content .content-container .dress {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#main #content .content-container .dress .dress-item {
+    text-align: center;
+    width: 24%;
+    box-shadow: 0px 5px 15px rgba(90, 88, 88, 0.9)
+}
+
+#main #content .content-container .dress .dress-item a h2 {
+    font-size: 15px;
+    color: rgb(71, 71, 71);
+}
+
+#main #content .content-container .dress .dress-item a p {
+    font-size: 13px;
+    color: black;
+    font-family: 'Yekan';
+}
+
+#main #content .content-container .dress .dress-item a p span {
+    font-size: 12px;
+    color: black;
+    font-family: 'Yekan';
+}
+
+#main #content .content-container .dress img {
+    width: 90%;
+}
+
+.best-selling-men {
+    margin-top: 20px;
+}
+
+.best-selling-men .selling-men-product {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+
+}
+
+.best-selling-men .selling-men-product .selling-item {
+    width: 24%;
+}
+
+.best-selling-men .selling-men-product .selling-item:hover {
+    box-shadow: 0 0 10px 2px rgba(22, 22, 22, 0.3);
+    transform: translateY(-5px);
+}
+
+.best-selling-men .selling-men-product .selling-item a {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.best-selling-men .selling-men-product .selling-item a h2 {
+    font-size: 17px;
+    margin-top: 10px;
+    color: rgb(47, 42, 42);
+}
+
+.best-selling-men .selling-men-product .selling-item a p.price-item {
+    margin: 30px 0px 0 5px;
+    font-family: 'Yekan';
+    font-size: 12px;
+    color: green;
+    text-decoration: none;
+}
+
+.best-selling-men .selling-men-product .selling-item a p {
+    /* width: 50%; */
+    margin: 30px 0px 0 0;
+    color: rgb(236, 17, 17);
+    font-family: 'Yekan';
+    font-size: 12px;
+    text-decoration: line-through;
+}
+
+.best-selling-men .selling-men-product .selling-item img {
+    width: 100%;
+    height: 250px;
+}
+
+/* start cosmetic */
+
+#cosmetic {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 30px 0;
+}
+
+#cosmetic a {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+#cosmetic h2 {
+    position: absolute;
+    left: 20%;
+    font-size: 35px;
+    animation: zoom-cosmetic 2s linear forwards;
+    animation-iteration-count: infinite;
+    /* transform: scale(1.2); */
+}
+
+
+@keyframes zoom-cosmetic {
+    0% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+#cosmetic img {
+    width: 100%;
+}
+
+/* girls main items */
+
+.best-selling-girl {
+    margin-top: 20px;
+}
+
+.best-selling-girl .selling-girl-product {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+
+}
+
+.best-selling-girl .selling-girl-product .selling-item {
+    width: 24%;
+}
+
+.best-selling-girl .selling-girl-product .selling-item:hover {
+    box-shadow: 0 0 10px 2px rgba(22, 22, 22, 0.3);
+    transform: translateY(-5px);
+}
+
+.best-selling-girl .selling-girl-product .selling-item a {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.best-selling-girl .selling-girl-product .selling-item a h2 {
+    font-size: 17px;
+    margin-top: 10px;
+    color: rgb(47, 42, 42);
+}
+
+.best-selling-girl .selling-girl-product .selling-item a p.price-item {
+    margin: 30px 0px 0 5px;
+    font-family: 'Yekan';
+    font-size: 12px;
+    color: green;
+    text-decoration: none;
+}
+
+.best-selling-girl .selling-girl-product .selling-item a p {
+    /* width: 50%; */
+    margin: 30px 0px 0 0;
+    color: rgb(236, 17, 17);
+    font-family: 'Yekan';
+    font-size: 12px;
+    text-decoration: line-through;
+}
+
+.best-selling-girl .selling-girl-product .selling-item img {
+    width: 100%;
+    height: 250px;
+}
+
+#brand {
+    width: 100%;
+}
+
+#brand .best-brands-items {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    /* background-color: red; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+#brand .best-brands-items .best-brands {
+    width: 15%;
+}
+
+#brand .best-brands-items .best-brands:hover {
+    transform: translateY(-8px);
+    /* background-color: rgba(50, 50, 50, 0.4); */
+}
+
+#brand .best-brands-items .best-brands img {
+    width: 100%;
+}
+
+.best-selling-kids {
+    margin-top: 20px;
+}
+
+.best-selling-kids .selling-kids-product {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+
+}
+
+.best-selling-kids .selling-kids-product .selling-item {
+    width: 24%;
+}
+
+.best-selling-kids .selling-kids-product .selling-item:hover {
+    box-shadow: 0 0 10px 2px rgba(22, 22, 22, 0.3);
+    transform: translateY(-5px);
+}
+
+.best-selling-kids .selling-kids-product .selling-item a {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.best-selling-kids .selling-kids-product .selling-item a h2 {
+    font-size: 17px;
+    margin-top: 10px;
+    color: rgb(47, 42, 42);
+}
+
+.best-selling-kids .selling-kids-product .selling-item a p.price-item {
+    margin: 30px 0px 0 5px;
+    font-family: 'Yekan';
+    font-size: 12px;
+    color: green;
+    text-decoration: none;
+}
+
+.best-selling-kids .selling-kids-product .selling-item a p {
+    /* width: 50%; */
+    margin: 30px 0px 0 0;
+    color: rgb(236, 17, 17);
+    font-family: 'Yekan';
+    font-size: 12px;
+    text-decoration: line-through;
+}
+
+.best-selling-kids .selling-kids-product .selling-item img {
+    width: 100%;
+    height: 250px;
+}
+
+/* end main */
+
+/* start slider */
+
+
+#main #sidebar {
+    width: 33%;
+    box-shadow: 0px 5px 15px rgba(22, 22, 22, 0.9);
+    height: 100%;
+    position: sticky;
+    top: 0px;
+}
+
+/* start last products */
+
+#main #sidebar .last-products {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#main #sidebar .last-products .last-products-item {
+    width: 24%;
+    text-align: center;
+}
+
+#main #sidebar .last-products .last-products-item:hover {
+    transform: scale(1.2);
+
+}
+
+#main #sidebar .last-products .last-products-item a img {
+    width: 100%;
+}
+
+#main #sidebar .last-products .last-products-item a h2 {
+    font-size: 15px;
+    color: rgb(50, 50, 50);
+}
+
+#main #sidebar .last-products .last-products-item a p {
+    font-family: 'Yekan';
+    font-size: 12px;
+    color: rgb(2, 62, 2);
+}
+
+/* end last products */
+/* start most selling */
+
+#main #sidebar .most-selling-products {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#main #sidebar .most-selling-products .last-products-item {
+    width: 24%;
+    text-align: center;
+}
+
+#main #sidebar .most-selling-products .last-products-item:hover {
+    transform: scale(1.2);
+
+}
+
+#main #sidebar .most-selling-products .last-products-item a img {
+    width: 100%;
+}
+
+#main #sidebar .most-selling-products .last-products-item a h2 {
+    font-size: 15px;
+    color: rgb(50, 50, 50);
+}
+
+#main #sidebar .most-selling-products .last-products-item a p {
+    font-family: 'Yekan';
+    font-size: 12px;
+    color: rgb(2, 62, 2);
+}
+
+/* end most selling */
+/* start lap tops */
+
+#main #sidebar .laptop-items {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#main #sidebar .laptop-items .last-products-item {
+    width: 24%;
+    text-align: center;
+}
+
+#main #sidebar .laptop-items .last-products-item:hover {
+    transform: scale(1.2);
+
+}
+
+#main #sidebar .laptop-items .last-products-item a img {
+    width: 100%;
+}
+
+#main #sidebar .laptop-items .last-products-item a h2 {
+    font-size: 15px;
+    color: rgb(50, 50, 50);
+}
+
+#main #sidebar .laptop-items .last-products-item a p {
+    font-family: 'Yekan';
+    font-size: 12px;
+    color: rgb(2, 62, 2);
+}
+
+/* end lap tops */
+
+/* start banner ads */
+
+#main #sidebar .banner-ads {
+    margin-top: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* end banner ads */
+
+/* start suggest */
+
+.suggested {
+    width: 100%;
+    background: linear-gradient(90deg, rgb(0, 0, 0), rgb(7, 7, 32));
+    padding: 50px 0;
+}
+
+.suggested .row {
+    display: flex;
+}
+
+.suggested .suggested-title {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 38px;
+    color: #fff;
+}
+
+.suggested .suggested-product {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+}
+
+.suggested .suggested-product .duggested-product-item {
+    width: 32%;
+    background-color: #fff;
+    border-radius: 5px;
+    position: relative;
+}
+
+.suggested .suggested-product .duggested-product-item a .offer {
+    position: absolute;
+    top: 10px;
+    right: 3px;
+    color: white;
+    background: #C00;
+    padding: 3px;
+    border-radius: 5px;
+
+}
+
+.suggested .suggested-product .duggested-product-item a {
+    display: block;
+
+}
+
+.suggested .suggested-product .duggested-product-item a img {
+    width: 100%;
+}
+
+.suggested .suggested-product .duggested-product-item a div {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    color: black;
+    font-family: 'Yekan';
+
+}
+
+.suggested .suggested-product .duggested-product-item a div span {
+    color: #c00;
+    text-decoration: line-through;
+}
+
+.suggested .suggested-product .duggested-product-item a h4 {
+    font-family: 'Yekan';
+    text-align: center;
+    padding: 10px 0;
+}
+
+.suggested .suggested-product .duggested-product-item a h4 span {
+    font-family: 'Yekan';
+    margin-left: 5px;
+    color: green;
+}
+
+/* end suggest */
+
+/* start favorite */
+
+.favorite {
+    width: 100%;
+    padding: 100px 0;
+
+}
+
+.favorite .row {
+    display: flex;
+    outline: 8px dashed gray;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.favorite .favorite-content {
+    width: 70%;
+    display: flex;
+    border-left: 5px dashed gray;
+}
+
+.favorite .favorite-content .favorite-item {
+    width: 50%;
+    text-align: center;
+}
+
+.favorite .favorite-content .favorite-item a img {
+    width: 100%;
+}
+
+.favorite .favorite-content .favorite-item .eye-heart {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+}
+
+.favorite .favorite-content .favorite-item .eye-heart h4 {
+    color: black;
+    font-family: 'Yekan';
+}
+
+.favorite .favorite-title {
+    color: red;
+    margin: auto;
+    font-size: 25px;
+}
+
+
+
+/* start footer */
+
+.footer {
+    width: 100%;
+    background: black;
+    color: white;
+    padding: 50px 0;
+}
+
+.footer .footer-about {
+    width: 32.33%;
+}
+
+.footer .footer-about p {
+    text-align: center;
+}
+
+.footer .footer-social {
+    width: 32.33%;
+}
+
+.footer .footer-social ul {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: auto;
+}
+
+.footer .footer-social ul li a {
+    color: #fff;
+    font-size: 22px;
+}
+
+
+.footer .footer-news-letter {
+    width: 32.33%;
+}
+
+.footer .footer-news-letter form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .footer-news-letter form input {
+    width: 80%;
+    outline: none;
+    padding: 8px 0;
+}
+
+.footer .footer-news-letter form button {
+    text-align: center;
+    background: #c00;
+    color: #fff;
+    border: none;
+    padding: 0 10px;
+    cursor: pointer;
+
+}
+
+.footer h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+.footer .footer-customer-srvices {
+
+    width: 32.33;
+}
+
+.footer .footer-customer-srvices h3 {
+    margin-bottom: 40px;
+}
+
+.footer .footer-customer-srvices ul li {
+    margin-bottom: 10px;
+}
+
+.footer .footer-customer-srvices ul li a {
+    color: #fff;
+    padding: 5px 0;
+    /* display: block; */
+}
+
+.footer .footer-qick-access {
+    width: 32.33;
+}
+
+.footer .footer-qick-access h3 {
+    margin-bottom: 40px;
+}
+
+.footer .footer-qick-access ul li {
+    margin-bottom: 10px;
+}
+
+.footer .footer-qick-access ul li a {
+    color: #fff;
+    padding: 5px 0;
+    /* display: block; */
+}
+
+.footer .footer-license {
+    width: 32.33;
+}
+
+.footer .footer-license .information {
+    margin-bottom: 25px;
+}
+
+.footer .footer-license .information h4 {
+    font-size: 15px;
+    font-family: 'Yekan';
+}
+
+.footer .footer-license .license {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .footer-license .license img {
+    width: 25%;
+}
+
+.hamburger {
+    display: none;
+}
+
+header .navbar .menu>ul>.close-icon {
+    display: none;
+}
