@@ -1,0 +1,181 @@
+@font-face {
+    font-family: 'Yekan';
+    src: url('../fonts/Yekan.eot')format('eot'),
+        url('../fonts/Yekan.ttf') format('truetype'),
+        url('../fonts/Yekan.woff2') format('woff2'),
+        url('../fonts/Yekan.woff') format('woff');
+
+}
+
+body {
+    font-family: 'Yekan' !important;
+    direction: rtl;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none !important;
+}
+
+
+
+/* navbar */
+
+.navbar {
+    padding: 0 !important;
+    height: 0;
+
+
+}
+
+.sidebar {
+    height: 100vh;
+    background-color: rgba(30, 30, 30, 0.8);
+}
+
+
+.sidebar-link {
+    transition: all 0.5s ease-in-out;
+}
+
+.sidebar-link:hover {
+    background-color: #444;
+    border-radius: 5px;
+
+}
+
+.current {
+    background-color: rgb(248, 63, 63);
+    border-radius: 7px;
+    box-shadow: 2px 5px 10px black;
+}
+
+.current:hover {
+    background-color: rgb(227, 53, 9);
+    border-radius: 7px;
+    box-shadow: 2px 5px 20px black;
+    transform: translateY(-1px);
+}
+
+.search-input {
+    background-color: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    border-bottom: 2px solid #999 !important;
+}
+
+.search-input::placeholder {
+    /* Most modern browsers support this now. */
+    color: rgb(246, 238, 246) !important;
+}
+
+.search-input:focus {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border-bottom: 2px solid rgb(222, 68, 68) !important;
+    color: rgb(246, 238, 246) !important;
+}
+
+.search-btn {
+    border-radius: 50% !important;
+    padding: 30px;
+}
+
+.icon-bullet {
+    position: relative;
+}
+
+.icon-bullet::after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 5px;
+    height: 12px;
+    width: 12px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+
+/* end of navbar */
+
+
+/* card */
+
+
+
+.common-card {
+    box-shadow: 1px 2px 5px #999;
+}
+
+.common-card:hover {
+    box-shadow: 2px 3px 15px #999;
+    transform: translateY(-1px);
+}
+
+/* end of card */
+
+
+
+@media (max-width: 768px) {
+
+
+    .sidebar {
+        position: static !important;
+        height: auto !important;
+    }
+
+    .topnav {
+        position: static !important;
+    }
+
+    .exit-icon {
+        margin: 0;
+    }
+
+    .icon-bullet::after {
+        right: 5px;
+    }
+
+}
+
+
+/* progress */
+
+.progress_main {
+    height: 20px !important;
+    margin-bottom: 15px;
+}
+
+.progress1 {
+    width: 91%;
+    font-weight: bold;
+}
+
+.progress2 {
+    width: 82%;
+    font-weight: bold;
+}
+
+.progress3 {
+    width: 67%;
+    font-weight: bold;
+}
+
+.progress4 {
+    width: 18%;
+    font-weight: bold;
+}
+
+/* end of progress */
+
+
+/* task */
+
+.task-border {
+    border-right: 3px solid rgb(255, 64, 0);
+}
+
+/* end of task */
