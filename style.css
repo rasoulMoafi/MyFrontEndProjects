@@ -28,6 +28,7 @@ ul li {
 
 ul li p {
   font-size: 20px;
+  font-weight: bolder;
 }
 
 ul li img {
@@ -55,12 +56,25 @@ ul li a:hover {
   color: #d36b00;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768) {
   ul li {
     width: 80%;
     height: 17rem;
   }
   ul li p {
     font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  ul li {
+    width: 80%;
+    height: 15rem;
+  }
+  ul li p {
+    font-size: 18px;
+  }
+  ul li a {
+    padding: 5px 0;
   }
 }
