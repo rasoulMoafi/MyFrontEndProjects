@@ -14,6 +14,7 @@ ul {
 }
 ul li {
   width: 31%;
+  height: 20rem;
   padding: 5px;
   display: flex;
   flex-direction: column;
@@ -51,4 +52,13 @@ ul li a {
 ul li a:hover {
   background: black;
   color: #d36b00;
+}
+
+@media screen and (max-width: 600px) {
+  ul li {
+    height: 10rem;
+  }
+  ul li p {
+    font-size: 14px;
+  }
 }
