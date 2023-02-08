@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/lightbox.css" />
+    <title>Book Store</title>
+  </head>
+  <body>
+    <!-- navigation -->
+    <nav class="navigation">
+      <button
+        type="button"
+        class="navbar-toggler hamburger-menu"
+        data-bs-toggle="collapse"
+        data-bs-target="#myNavbar"
+      >
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </button>
+      <div class="bg-cover"></div>
+      <div class="collapse nav-content" id="myNavbar">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-10 mx-auto">
+              <ul class="navbar-nav flex-lg-row flex-column nav-justified">
+                <li class="nav-item">
+                  <a href="#" class="nav-link m-lg-3 m-1 link-item">خانه</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link m-lg-3 m-1 link-item">کتابخانه</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link m-lg-3 m-1 link-item"
+                    >خرید کتاب</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link m-lg-3 m-1 link-item"
+                    >مطالعه انلاین</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link m-lg-3 m-1 link-item"
+                    >در باره ما</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link m-lg-3 m-1 link-item"
+                    >تماس با ما</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-5 col-10 mx-auto">
+              <form action="" class="my-5">
+                <div class="input-group">
+                  <input
+                    type="text"
+                    class="form-control rounded"
+                    placeholder="جست وجو"
+                  />
+                  <div class="input-group-append">
+                    <button type="button" class="btn text-bg-light px-2 py-1">
+                      <i class="fas fa-search"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid text-center">
+          <div class="row my-5">
+            <div class="col">
+              <h1 class="display-1 text-white">تخفیف شگفت انگیز</h1>
+              <h3 class="text-light">هر کتاب رو فقط با 100,000 تومان بخر</h3>
+            </div>
+          </div>
+          <div class="row d-lg-block d-none">
+            <div class="col">
+              <img src="img/headerBook.svg" width="500px" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end-of-navigation -->
+
+    <!-- header -->
+
+    <header class="d-flex flex-row-reverse align-items-center">
+      <div class="align-self-start position-absolute">
+        <a href="#">
+          <img src="img/headerBook.svg" width="180" class="img-fluid" />
+        </a>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col text-center">
+            <h1
+              style="font-family: 'IranNastaliq'"
+              class="text-light display-1 mb-5 banner-heading"
+            >
+              ما <img src="img/Heart.svg" width="200" class="img-fluid" />خواندن
+              هستیم
+            </h1>
+            <a
+              style="font-family: 'IranNastaliq'"
+              href="#"
+              class="btn btn-lg btn-outline-danger pt-4 pb-3 px-5"
+              >بررسی کنیم</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- end of header -->
+
+    <!-- gallery -->
+    <section class="gallery">
+      <div class="container-fluid">
+        <!-- title -->
+        <div class="row">
+          <div class="col text-center py-5">
+            <h1
+              style="font-family: 'IranNastaliq'"
+              class="text-secondary common-title"
+            >
+              بهترین کتابخانه های ایران و جهان
+            </h1>
+          </div>
+        </div>
+        <!-- end of title -->
+        <div class="row mb-4 first-row d-flex align-items-end">
+          <div class="col-lg-3 col-sm-6 col-10 mx-auto text-center">
+            <a
+              href="img/WorldLibrary/Austrialibrary.jpg"
+              data-lightbox="library"
+              data-title="کتابخانه ملی اتریش، وین، اتریش"
+            >
+              <img
+                src="img/WorldLibrary/Austrialibrary.jpg"
+                class="img-thumbnail gallery-img"
+              />
+            </a>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-10 mx-auto text-center">
+            <a
+              href="img/WorldLibrary/congress-library.jpg"
+              data-lightbox="library"
+              data-title="کتابخانه کنگره، واشنگتن، ایالات متحده آمریکا"
+            >
+              <img
+                src="img/WorldLibrary/congress-library.jpg"
+                class="img-thumbnail gallery-img"
+              />
+            </a>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-10 mx-auto text-center">
+            <a
+              href="img/WorldLibrary/ItaliaGirolaminilibrary.jpg"
+              data-lightbox="library"
+              data-title="کتابخانه ملی گیرولامینی اوراتوری، ناپولی، ایتالیا"
+            >
+              <img
+                src="img/WorldLibrary/ItaliaGirolaminilibrary.jpg"
+                class="img-thumbnail gallery-img"
+              />
+            </a>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-10 mx-auto text-center">
+            <a
+              href="img/WorldLibrary/ItaliaVatikanlibrary.jpg"
+              data-lightbox="library"
+              data-title="کتابخانه واتیکان، شهر واتیکان،واتیکان"
+            >
+              <img
+                src="img/WorldLibrary/ItaliaVatikanlibrary.jpg"
+                class="img-thumbnail gallery-img"
+              />
+            </a>
+          </div>
+        </div>
+        <div class="row mb-4 second-row align-items-end">
+          <div class="col-lg-3 text-center">
+            <a
+              href="img/IranLibrary/Dayerelibrary.jpg"
+              data-lightbox="library"
+              data-title="کتابخانه دائره المعارف بزرگ اسلامی، تهران، ایران"
+            >
+              <img
+                src="img/IranLibrary/Dayerelibrary.jpg"
+                class="img-thumbnail gallery-img"
+              />
+            </a>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-10 mx-auto text-center">
+            <a
+              href="img/IranLibrary/Hoseyniyehlibrary.jpg"
+              data-lightbox="library"
+              data-title="کتابخانه حسينيه ارشاد، تهران، ایران"
+            >
+              <img
+                src="img/IranLibrary/Hoseyniyehlibrary.jpg"
+                class="img-thumbnail gallery-img"
+              />
+            </a>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-10 mx-auto text-center">
+            <a
+              href="img/IranLibrary/IranmalLibrary.jpg"
+              data-lightbox="library"
+              data-title="کتابخانه ایران مال،تهران،ایران"
+            >
+              <img
+                src="img/IranLibrary/IranmalLibrary.jpg"
+                class="img-thumbnail gallery-img"
+              />
+            </a>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-10 mx-auto text-center">
+            <a
+              href="img/IranLibrary/Mellilibrary.jpg"
+              data-lightbox="library"
+              data-title="کتابخانه ملی ایران، تهران،ایران"
+            >
+              <img
+                src="img/IranLibrary/Mellilibrary.jpg"
+                class="img-thumbnail gallery-img"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of gallery -->
+
+    <!-- famous writters -->
+    <section class="famous-writters pb-2">
+      <div class="container-fluid">
+        <!-- title -->
+        <div class="row">
+          <div class="col text-center py-5">
+            <h1
+              style="font-family: 'IranNastaliq'"
+              class="text-secondary common-title"
+            >
+              معروفترین نویسندگان ایران و جهان
+            </h1>
+          </div>
+        </div>
+        <!-- end of title -->
+        <div class="row">
+          <div class="col-lg-4 text-center align-self-center">
+            <a href="#">
+              <img
+                src="img/famous_writters/WilliamBook1.png"
+                style="width: 270px"
+                id="Book-1"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="col-lg-4">
+            <div id="accordion" class="writers-accordion">
+              <div class="card">
+                <div class="card-header p-3">
+                  <button
+                    type="button"
+                    class="btn w-100 btn-outline-danger py-2"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseone"
+                    id="button-William"
+                  >
+                    ویلیام شکسپیر
+                  </button>
+                </div>
+                <div
+                  class="collapse show"
+                  id="collapseone"
+                  data-bs-parent="#accordion"
+                >
+                  <div class="card-body">
+                    <div class="card m-5">
+                      <img
+                        src="img/famous_writters/William.jpg"
+                        class="card-img-top img-fluid"
+                      />
+                      <div class="card-body">
+                        <p class="card-text my-2 mx-3">
+                          ویلیام شکسپیر (زاده ۱۵۶۴ – درگذشته ۱۶۱۶) شاعر و
+                          نمایشنامه‌نویس و بازیگر تئاتر انگلیسی بود که بسیاری وی
+                          را بزرگ‌ترین نویسنده در زبان انگلیسی دانسته‌اند.
+                          «سخن‌سرای آون» لقبی است که به خاطر محل تولدش در آون
+                          واقع در استراتفورد انگلیس به وی داده‌اند.
+                        </p>
+                        <a href="#" class="btn btn-lg btn-primary w-100 mt-2"
+                          >کتاب های این نویسنده</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header p-3">
+                  <button
+                    type="button"
+                    class="btn w-100 btn-outline-danger py-2"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapsetwo"
+                    id="button-dostoevsky"
+                  >
+                    فیودور داستایِفسکی
+                  </button>
+                </div>
+                <div
+                  class="collapse"
+                  id="collapsetwo"
+                  data-bs-parent="#accordion"
+                >
+                  <div class="card-body">
+                    <div class="card m-5">
+                      <img
+                        src="img/famous_writters/Dostoevsky.jpg"
+                        class="card-img-top img-fluid"
+                      />
+                      <div class="card-body">
+                        <p class="card-text my-2 mx-3">
+                          فیودور میخایلوویچ داستایِفسکی یا داستایِوسکی؛ زاده ۱۱
+                          نوامبر ۱۸۲۱ – درگذشتهٔ ۹ فوریهٔ ۱۸۸۱)، نویسنده مشهور و
+                          تأثیرگذار اهل روسیه بود. ویژگی منحصر به فرد آثار وی
+                          روانکاوی و بررسی زوایای روانی شخصیت‌های داستان است.
+                          بسیاری او را بزرگترین نویسنده روان‌شناختی جهان به حساب
+                          می‌آورند. سوررئالیستها، مانیفست خود را بر اساس
+                          نوشته‌های داستایِفسکی ارائه کرده‌اند.
+                        </p>
+                        <a href="#" class="btn btn-lg btn-primary w-100 mt-2"
+                          >کتاب های این نویسنده</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header p-3">
+                  <button
+                    type="button"
+                    class="btn w-100 btn-outline-danger py-2"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapsethree"
+                    id="button-Jalal"
+                  >
+                    جلال آل احمد
+                  </button>
+                </div>
+                <div
+                  class="collapse"
+                  id="collapsethree"
+                  data-bs-parent="#accordion"
+                >
+                  <div class="card-body">
+                    <div class="card m-5">
+                      <img
+                        src="img/famous_writters/Jalal.jpg"
+                        class="card-img-top img-fluid"
+                      />
+                      <div class="card-body">
+                        <p class="card-text my-2 mx-3">
+                          سید جلال‌الدین سادات آل احمد (۱۱ آذر ۱۳۰۲ – ۱۸ شهریور
+                          ۱۳۴۸) روشنفکر سوسیالیست، نویسنده، منتقد ادبی و مترجم
+                          ایرانی بود. وی همسر سیمین دانشور بود. آل احمد در دههٔ
+                          ۱۳۴۰ به شهرت رسید و در جنبش روشنفکری و نویسندگی ایران
+                          تأثیر بسزایی گذاشت.
+                        </p>
+                        <a href="#" class="btn btn-lg btn-primary w-100 mt-2"
+                          >کتاب های این نویسنده</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header p-3">
+                  <button
+                    type="button"
+                    class="btn w-100 btn-outline-danger py-2"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapsefour"
+                    id="button-Jamalzadeh"
+                  >
+                    محمد علی جمالزاده
+                  </button>
+                </div>
+                <div
+                  class="collapse"
+                  id="collapsefour"
+                  data-bs-parent="#accordion"
+                >
+                  <div class="card-body">
+                    <div class="card m-5">
+                      <img
+                        src="img/famous_writters/Jamalzadeh.jpg"
+                        class="card-img-top img-fluid"
+                      />
+                      <div class="card-body">
+                        <p class="card-text my-2 mx-3">
+                          سید محمدعلی موسوی جمال‌زاده اصفهانی (۲۳ دی ۱۲۷۰ در
+                          اصفهان – ۱۷ آبان ۱۳۷۶ در ژنو) نویسنده و مترجم معاصر
+                          ایرانی بود. او را پیشتاز قصّه‌نویسی معاصر، پدر داستان
+                          کوتاه در زبان فارسی و آغازگر سبک واقع‌گرایی در ادبیات
+                          فارسی می‌دانند.
+                        </p>
+                        <a href="#" class="btn btn-lg btn-primary w-100 mt-2"
+                          >کتاب های این نویسنده</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="btn w-100 p-2 bg-primary mt-2"
+                >دیگر نویسندگان</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-4 text-center align-self-center">
+            <a href="#">
+              <img
+                src="img/famous_writters/WilliamBook2.png"
+                style="width: 270px"
+                id="Book-2"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of famous writters -->
+
+    <!-- suggested books -->
+    <section class="suggested-books">
+      <div class="container-fluid">
+        <!-- title -->
+        <div class="row">
+          <div class="col text-center py-5">
+            <h1
+              style="font-family: 'IranNastaliq'"
+              class="text-dark common-title"
+            >
+              کتاب های پیشنهادی ما
+            </h1>
+          </div>
+        </div>
+        <!-- end of title -->
+        <div class="row">
+          <div class="col-lg-6 col-md-8 col-sm-10 books">
+            <a href="#">
+              <img
+                src="img/books/book1.jpg"
+                class="img-fluid book book-1"
+                alt=""
+              />
+            </a>
+            <a href="#">
+              <img
+                src="img/books/book2.jpg"
+                class="img-fluid book book-2"
+                alt=""
+              />
+            </a>
+            <a href="#">
+              <img
+                src="img/books/book3.jpg"
+                class="img-fluid book book-3"
+                alt=""
+              />
+            </a>
+            <a href="#">
+              <img
+                src="img/books/book4.jpg"
+                class="img-fluid book book-4"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of suggested books -->
+
+    <!-- popular books -->
+
+    <section class="popular-books">
+      <div class="video-container">
+        <video
+          class="bg-video"
+          autoplay
+          muted
+          loop
+          src="video/coverr-a-man-plays-with-his-dog-87-1080p.mp4"
+          type="video/mp4"
+        >
+          Your browser is not supported
+        </video>
+      </div>
+      <div class="container-fluid">
+        <!-- title -->
+        <div class="row">
+          <div class="col text-center py-5">
+            <h1
+              style="font-family: 'IranNastaliq'"
+              class="text-dark common-title"
+            >
+              محبوب ترین کتاب های هفته
+            </h1>
+          </div>
+        </div>
+        <!-- end of title -->
+        <div class="row justify-content-around align-items-center">
+          <div class="col-xl-3 col-lg-4 col-sm-8 rotate">
+            <div class="card text-center mb-3 mx-5 book-card">
+              <div class="card-header p-2">
+                <h4>نبرد من</h4>
+              </div>
+              <div class="card-body text-center">
+                <img
+                  src="img/popularbooks/AdolfHitler.jpg"
+                  class="img-fluid rounded m-auto"
+                />
+              </div>
+              <div class="card-footer p-2">نویسنده آدولف هیتلر</div>
+              <div class="back">
+                <div class="back-content">
+                  <h1 class="bg-warning">خرید با تخفیف فقط</h1>
+                  <h3 class="text-success">100,000 تومان</h3>
+                  <p class="text-danger"><del>160,000 تومان</del></p>
+                  <a href="#" class="btn btn-outline-danger py-2 px-4 mb-3"
+                    >میخرمش</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-sm-8 rotate">
+            <div class="card text-center mb-3 mx-5 book-card">
+              <div class="card-header p-2">
+                <h4>چشمهایش</h4>
+              </div>
+              <div class="card-body">
+                <img
+                  src="img/popularbooks/HerEyes.jpg"
+                  class="img-fluid rounded"
+                />
+              </div>
+              <div class="card-footer p-2">نویسنده بزرگ علوی</div>
+              <div class="back">
+                <div class="back-content">
+                  <h1 class="bg-warning">خرید با تخفیف فقط</h1>
+                  <h3 class="text-success">110,000 تومان</h3>
+                  <p class="text-danger"><del>170,000 تومان</del></p>
+                  <a href="#" class="btn btn-outline-danger py-2 px-4 mb-3"
+                    >میخرمش</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-sm-8 rotate">
+            <div class="card text-center mb-3 mx-5 book-card">
+              <div class="card-header p-2">
+                <h4>مردی به نام اوه</h4>
+              </div>
+              <div class="card-body">
+                <img
+                  src="img/popularbooks/AManCalledOve.jpg"
+                  class="img-fluid rounded"
+                />
+              </div>
+              <div class="card-footer p-2">نویسنده فردریک بکمن</div>
+              <div class="back">
+                <div class="back-content">
+                  <h1 class="bg-warning">خرید با تخفیف فقط</h1>
+                  <h3 class="text-success">120,000 تومان</h3>
+                  <p class="text-danger"><del>200,000 تومان</del></p>
+                  <a href="#" class="btn btn-outline-danger py-2 px-4 mb-3"
+                    >میخرمش</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of popular books -->
+
+    <!-- contact us -->
+    <section class="contact py-5">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xl-5 col-md-8 col-10 mx-auto mb-4">
+            <div class="row items-wrapper py-3 align-items-center text-center">
+              <div
+                class="col-sm-5 col-8 floating-item first-item mx-auto my-4 py-2"
+              >
+                <a href="#" class="text-light" style="text-decoration: none"
+                  ><i class="fab fa-linkedin"></i>در لینکدین با ما همراه شوید</a
+                >
+              </div>
+              <div
+                class="col-sm-5 col-8 floating-item second-item mx-auto my-4 py-2"
+              >
+                <a href="#" class="text-light" style="text-decoration: none"
+                  ><i class="fab fa-facebook"></i>در فیسبوک به ما ملحق شوید</a
+                >
+              </div>
+              <div
+                class="col-sm-5 col-8 floating-item third-item mx-auto my-4 py-2"
+              >
+                <div class="text-light">
+                  <h4>کتاب های جدید ما</h4>
+                  <p>کتاب های جدید را به شما معرفی می کنیم</p>
+                  <a href="#" class="text-danger" style="text-decoration: none"
+                    >کتاب های بیشتر</a
+                  >
+                  <a href="#" class="text-danger" style="text-decoration: none"
+                    >کتاب های محبوب</a
+                  >
+                </div>
+              </div>
+              <div
+                class="col-sm-5 col-8 floating-item fourth-item mx-auto my-4 py-2"
+              >
+                <div class="text-light">
+                  <p>تخفیف های رو به اتمام</p>
+                  <a href="#" class="text-danger" style="text-decoration: none"
+                    >میخرمشون</a
+                  >
+                </div>
+                <a href="#" class="text-light" style="text-decoration: none"
+                  ><i class="fab fa-facebook"></i>در فیسبوک ما ر دنبال کنید</a
+                >
+              </div>
+              <div
+                class="col-sm-5 col-8 floating-item fifth-item mx-auto my-4 py-2"
+              >
+                <a href="#" class="text-light" style="text-decoration: none"
+                  ><i class="fab fa-book"></i>مطالعه انلاین</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-5 col-md-8 col-10 mx-auto">
+            <h1
+              style="font-family: 'IranNastaliq'"
+              class="text-light common-title mb-5"
+            >
+              با ما در تماس باشید
+            </h1>
+            <form class="contact-form">
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control py-2 mb-2"
+                  placeholder="نام و نام خانوادگی"
+                />
+                <input
+                  type="email"
+                  class="form-control py-2 mb-2"
+                  placeholder="ایمیل"
+                />
+                <textarea
+                  class="form-control mb-3"
+                  placeholder="پیام"
+                  cols="30"
+                  rows="3"
+                ></textarea>
+                <button
+                  type="button"
+                  class="btn form-control btn-outline-danger w-100 py-2"
+                >
+                  ارسال
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of contact us -->
+
+    <!-- footer -->
+    <footer class="bg-dark">
+      <div class="container-fluid">
+        <div class="row pb-3">
+          <div class="col-12 p-4 text-light text-center">
+            <h1 style="font-family: 'IranNastaliq'">به ما بپیوندید</h1>
+          </div>
+          <div class="col-sm-5 col-12 m-auto">
+            <form action="" class="row border rounded mb-3 p-5">
+              <input
+                type="email"
+                class="form-control w-50 m-auto"
+                placeholder="ایمیل"
+              />
+              <a href="#" class="btn btn-outline-danger w-25 m-auto">عضو شدن</a>
+            </form>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-center">
+            <div class="mb-2">
+              <a href="#"
+                ><i class="fab fa-facebook fa-2x text-primary mx-4"></i
+              ></a>
+              <a href="#"
+                ><i class="fab fa-twitter fa-2x text-info mx-4"></i
+              ></a>
+              <a href="#"
+                ><i class="fab fa-instagram fa-2x text-danger mx-4"></i
+              ></a>
+              <a href="#"
+                ><i class="fab fa-linkedin fa-2x text-info mx-4"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid p-3">
+          <div class="row">
+            <div class="col mb-4">
+              <ul class="nav justify-content-center nav-tabs">
+                <li class="nav-item m-2">
+                  <a href="#" class="nav-link text-light p-2">خانه</a>
+                </li>
+                <li class="nav-item m-2">
+                  <a href="#" class="nav-link text-light p-2">کتابخانه</a>
+                </li>
+                <li class="nav-item m-2">
+                  <a href="#" class="nav-link text-light p-2">خرید کتاب</a>
+                </li>
+                <li class="nav-item m-2">
+                  <a href="#" class="nav-link text-light p-2">مطالعه انلاین</a>
+                </li>
+                <li class="nav-item m-2">
+                  <a href="#" class="nav-link text-light p-2">درباره ما</a>
+                </li>
+                <li class="nav-item m-2">
+                  <a href="#" class="nav-link text-light p-2">تماس با ما</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-light text-center">
+            <p>&copy; حق نشر محفوظ. ساخته شده توسط CodeAndCreate</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end of footer -->
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/lightbox.js"></script>
+  </body>
+</html>

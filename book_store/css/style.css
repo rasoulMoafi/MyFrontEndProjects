@@ -1,0 +1,427 @@
+@font-face {
+    font-family: 'Yekan';
+    src: url('../fonts/Yekan.eot')format('eot'),
+        url('../fonts/Yekan.ttf') format('truetype'),
+        url('../fonts/Yekan.woff2') format('woff2'),
+        url('../fonts/Yekan.woff') format('woff');
+
+}
+
+@font-face {
+    font-family: 'IranNastaliq';
+    src: url('../fonts/IranNastaliq.eot')format('eot'),
+        url('../fonts/IranNastaliq.ttf') format('truetype'),
+        url('../fonts/IranNastaliq.woff2') format('woff2'),
+        url('../fonts/IranNastaliq.woff') format('woff');
+
+}
+
+* {
+    padding: 0 !important;
+    margin: 0 !important;
+    list-style: none;
+    /* text-decoration: none; */
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Yekan' !important;
+    direction: rtl;
+    overflow-x: hidden;
+}
+
+/* navigation */
+.hamburger-menu {
+    width: 65px;
+    height: 65px;
+    background: gray;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    z-index: 3;
+    border-radius: 50% !important;
+    transition: all 1s !important;
+}
+
+.line1,
+.line2,
+.line3 {
+    width: 30px;
+    height: 2px;
+    background: white;
+    margin: 6px auto !important;
+    transition: all 1s;
+}
+
+.change .line1 {
+    transform: rotate(-315deg) translate(4px, 1px);
+    background: gray;
+}
+
+.change .line2 {
+    display: none;
+}
+
+.change .line3 {
+    transform: rotate(315deg) translate(3px, -3px);
+    background: gray;
+}
+
+.change .hamburger-menu {
+    background: white;
+}
+
+.bg-cover {
+    background-color: rgba(40, 40, 40, 0.9);
+    width: 55px;
+    height: 55px;
+    position: fixed;
+    z-index: 1;
+    border-radius: 50%;
+    top: 35px;
+    right: 35px;
+    transition: all 1s ease-in;
+}
+
+.change .bg-cover {
+    transform: scale(100);
+}
+
+.nav-content {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+}
+
+.link-item {
+    font-size: 20px !important;
+    color: rgb(132, 131, 131) !important;
+    border-bottom: 1px solid rgb(132, 131, 131);
+}
+
+.link-item:hover {
+    color: #fff !important;
+    border-bottom: 1px solid #fff;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+/* end-of-navigation */
+
+
+/* header */
+header {
+    height: 100vh;
+    background-image: linear-gradient(rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 0.9)), url('../img/HeaderLibrary1.jpg');
+    position: fixed center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+
+}
+
+.banner-heading img {
+    animation: beating 2s infinite;
+}
+
+@keyframes beating {
+    0% {
+        transform: scale(1);
+    }
+
+    40% {
+        transform: scale(1.1);
+    }
+
+    60% {
+        transform: scale(1.05);
+    }
+
+    80% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* end of header */
+
+
+/* gallery */
+
+.common-title {
+    display: inline-block;
+    font-size: rem;
+    text-shadow: 3px 3px 5px #aaa;
+    transition: all 0.5s;
+}
+
+
+.common-title:hover {
+    transform: translate(-3px, -5px);
+    text-shadow: 2px 5px 20px #aaa;
+}
+
+
+.gallery-img {
+    width: 250px;
+    transition: all 0.3s;
+}
+
+.gallery-img:hover {
+
+    transform: scale(1.1);
+}
+
+.first-row {
+    transform: translateX(-300px);
+    opacity: 0;
+    transition: all 2.5s;
+}
+
+.second-row {
+    transform: translateX(300px);
+    opacity: 0;
+    transition: all 2.5s;
+}
+
+
+.change .first-row,
+.change .second-row {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* end of gallery */
+
+/* famous-writters */
+
+.famous-writters {
+    background-image: linear-gradient(rgba(200, 200, 200, 0.8), rgba(200, 200, 200, 0.9)), url("../img/books.jpg");
+    position: fixed center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#Book-1,
+#Book-2 {
+    width: 300px;
+    height: 350px;
+}
+
+/* end of famous-writters */
+
+
+/* suggested-books */
+.suggested-books {
+    height: 100vh;
+    background-image: url("../img/woodbackground.jpg");
+    position: fixed center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.books {
+    position: relative;
+    height: 50vh;
+}
+
+.book {
+    width: 25%;
+    position: absolute;
+    box-shadow: 5px 5px 15px #444;
+    border-right: 5px solid #777;
+    border-bottom: 10px solid #444;
+    transition: all 0.7s ease-in-out;
+}
+
+.book-1 {
+    top: 5%;
+    left: 20%;
+    transform: rotate(-45deg);
+}
+
+.book-2 {
+    top: 20%;
+    left: 50%;
+    transform: rotate(40deg);
+}
+
+.book-3 {
+    top: 60%;
+    left: 40%;
+    transform: rotate(55deg);
+}
+
+.book-4 {
+    top: 55%;
+    left: 10%;
+    transform: rotate(-60deg);
+}
+
+.book:hover {
+    transform: scale(1.3) rotateX(0);
+    z-index: 1;
+    box-shadow: 5px 5px 25px #444;
+    border-right: 10px solid #ddd;
+    border-bottom: 20px solid #bbb;
+}
+
+/* end of suggested-books */
+
+
+/* popular books */
+.popular-books {
+    position: relative;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.bg-video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.book-card {
+    position: relative;
+    box-shadow: 5px 15px 50px #aaa;
+    transition: all 1s;
+    overflow: hidden;
+}
+
+.back {
+    position: absolute;
+    top: -100%;
+    background: white;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    user-select: none;
+    pointer-events: none;
+    transform: rotateY(180deg);
+    transition: all 1s;
+
+}
+
+.back-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.rotate {
+    perspective: 30rem;
+}
+
+.rotate:hover .book-card {
+    transform: rotateY(180deg);
+}
+
+
+.rotate:hover .back {
+    opacity: 1;
+    top: 0;
+    user-select: auto;
+    pointer-events: auto;
+
+}
+
+/* end of popular books */
+
+/* contact us */
+
+.contact {
+    background-image: linear-gradient(rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 0.9)), url("../img/Books-Banner.jpg");
+    position: fixed center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.items-wrapper {
+    background-image: url("../img/Book-Banner2.jpg");
+    position: fixed center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.floating-item {
+    background: rgba(0, 0, 0, 0.65);
+    border-radius: 5px;
+}
+
+.first-item {
+    animation: float 15s infinite;
+}
+
+.second-item {
+    animation: float 20s ease-in infinite;
+}
+
+.third-item {
+    animation: float 40s linear infinite;
+}
+
+.fourth-item {
+    animation: float 30s linear infinite;
+}
+
+.fifth-item {
+    animation: float 25s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(40px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    background: transparent;
+    font-size: 18px;
+    color: #333;
+    border-radius: 5px;
+    box-shadow: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    background: rgba(250, 250, 250, 0.8);
+    box-shadow: none;
+}
+
+.contact-form input[type="text"]::placeholder,
+.contact-form input[type="email"]::placeholder,
+.contact-form textarea::placeholder {
+    text-align: center;
+    color: #bbb !important;
+}
+
+
+/* end of contact us */
