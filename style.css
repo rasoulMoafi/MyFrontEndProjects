@@ -1,5 +1,9 @@
 body {
   background-color: #42032c;
+  text-align: center;
+}
+h1 {
+  color: #e6d2aa;
 }
 
 .container {
@@ -56,6 +60,18 @@ ul li a:hover {
   color: #d36b00;
 }
 
+footer {
+  display: flex;
+  justify-content: space-around;
+  color: #e6d2aa;
+}
+.heart {
+  color: red;
+}
+.emaillink {
+  text-decoration: none;
+  color: #d36b00;
+}
 @media screen and (max-width: 768) {
   ul li {
     width: 80%;
@@ -76,5 +92,8 @@ ul li a:hover {
   }
   ul li a {
     padding: 5px 0;
+  }
+  footer {
+    flex-direction: column;
   }
 }
